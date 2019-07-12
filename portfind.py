@@ -19,7 +19,7 @@ for x in files: # For each file
     with open(x, "r") as read_file: # Using itenerable open and preform a set of operations for each file
         data = json.load(read_file) # Load file as JSON
         port = data['build']['default']['port'] # Get the value of build/default/port inside the JSON structure
-        if port == input: 
+        if port == looking: 
             uiid = data['uuid'] # Get the uuid
             print("[SUCESS] Found! Folder is /{}/server.json", uiid) 
         else:
