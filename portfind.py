@@ -21,6 +21,4 @@ for x in files: # For each file
         port = data['build']['default']['port'] # Get the value of build/default/port inside the JSON structure
         if port == looking: 
             uiid = data['uuid'] # Get the uuid
-            print("[SUCESS] Found! Folder is /{}/server.json", uiid) 
-        else:
-            print("[FAIL] Couldn't find any servers with the port {}", port)
+            print("[SUCESS] Found! Folder is /{}/server.json", uiid)
