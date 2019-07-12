@@ -9,7 +9,7 @@
 
 import glob, os, json # Imports
 
-looking = input("What port do you need to find? ")
+looking = int(input("What port do you need to find? "))
 
 # ONLY run inside /srv/daemon/config/servers 
 
